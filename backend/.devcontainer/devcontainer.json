@@ -32,7 +32,10 @@
 			],
 			"settings": {
 				"editor.tabSize": 4,
-				"editor.fontSize": 24
+				"editor.fontSize": 24,
+				"[drawio]": {
+					"editor.fontSize": 24
+				}
 			}
 		}
 	},
