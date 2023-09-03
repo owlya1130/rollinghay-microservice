@@ -32,7 +32,7 @@
 			],
 			"settings": {
 				"editor.tabSize": 4,
-				"editor.fontSize": 24,
+				"editor.fontSize": 14,
 				"hediet.vscode-drawio.theme": "atlas"
 			}
 		}
