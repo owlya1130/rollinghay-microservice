@@ -1,0 +1,28 @@
+<mat-grid-list cols="1" rowHeight="10:1">
+	<mat-grid-tile>
+		<mat-form-field>
+			<mat-label>門市</mat-label>
+			<select matNativeControl required>
+				<option value="AA">北門</option>
+				<option value="BB">復國</option>
+				<option value="CC">工學</option>
+				<option value="DD">左營</option>
+			</select>
+		</mat-form-field>
+	</mat-grid-tile>
+	<mat-grid-tile>
+		<mat-form-field appearance="fill">
+			<mat-label>帳號</mat-label>
+			<input matInput placeholder="Placeholder" required>
+		</mat-form-field>
+	</mat-grid-tile>
+	<mat-grid-tile>
+		<mat-form-field appearance="fill">
+			<mat-label>密碼</mat-label>
+			<input matInput placeholder="Placeholder" required>
+		</mat-form-field>
+	</mat-grid-tile>
+	<mat-grid-tile>
+		<button mat-raised-button color="primary" (click)="authN()">登入</button>
+	</mat-grid-tile>
+</mat-grid-list>
