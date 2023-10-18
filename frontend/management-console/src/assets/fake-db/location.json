@@ -1,0 +1,22 @@
+[
+    {
+        "id": "AA",
+        "name": "北門總店",
+        "type": "store"
+    },
+    {
+        "id": "BB",
+        "name": "富國店",
+        "type": "store"
+    },
+    {
+        "id": "WW",
+        "name": "倉庫",
+        "type": "warehouse"
+    },
+    {
+        "id": "OO",
+        "name": "網拍辦公室",
+        "type": "office"
+    }
+]

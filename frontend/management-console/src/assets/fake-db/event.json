@@ -1,0 +1,142 @@
+[
+	{
+		"event_id": "0",
+		"event_group": "0",
+		"start_datetime": "yyyy/MM/dd hh:mm",
+		"end_datetime": "yyyy/MM/dd hh:mm",
+		"store_id": "AA",
+		"cage_id": "R1",
+		"member": {
+			"id": "0",
+			"name": "xxx",
+			"mobile": "xxxxx"
+		},
+		"note": "兔/天 數量"
+	},
+	{
+		"event_id": "0",
+		"event_group": "0",
+		"start_datetime": "yyyy/MM/dd hh:mm",
+		"end_datetime": "yyyy/MM/dd hh:mm",
+		"store_id": "AA",
+		"cage_id": "R1",
+		"member": {
+			"id": "0",
+			"name": "xxx",
+			"mobile": "xxxxx"
+		},
+		"note": "兔/天 數量"
+	},
+	{
+		"event_id": "0",
+		"event_group": "0",
+		"start_datetime": "yyyy/MM/dd hh:mm",
+		"end_datetime": "yyyy/MM/dd hh:mm",
+		"store_id": "AA",
+		"cage_id": "R1",
+		"member": {
+			"id": "0",
+			"name": "xxx",
+			"mobile": "xxxxx"
+		},
+		"note": "兔/天 數量"
+	},
+	{
+		"event_id": "0",
+		"event_group": "0",
+		"start_datetime": "yyyy/MM/dd hh:mm",
+		"end_datetime": "yyyy/MM/dd hh:mm",
+		"store_id": "AA",
+		"cage_id": "R1",
+		"member": {
+			"id": "0",
+			"name": "xxx",
+			"mobile": "xxxxx"
+		},
+		"note": "兔/天 數量"
+	},
+	{
+		"event_id": "0",
+		"event_group": "0",
+		"start_datetime": "yyyy/MM/dd hh:mm",
+		"end_datetime": "yyyy/MM/dd hh:mm",
+		"store_id": "AA",
+		"cage_id": "R1",
+		"member": {
+			"id": "0",
+			"name": "xxx",
+			"mobile": "xxxxx"
+		},
+		"note": "兔/天 數量"
+	},
+	{
+		"event_id": "0",
+		"event_group": "0",
+		"start_datetime": "yyyy/MM/dd hh:mm",
+		"end_datetime": "yyyy/MM/dd hh:mm",
+		"store_id": "BB",
+		"cage_id": "R1",
+		"member": {
+			"id": "0",
+			"name": "xxx",
+			"mobile": "xxxxx"
+		},
+		"note": "兔/天 數量"
+	},
+	{
+		"event_id": "0",
+		"event_group": "0",
+		"start_datetime": "yyyy/MM/dd hh:mm",
+		"end_datetime": "yyyy/MM/dd hh:mm",
+		"store_id": "BB",
+		"cage_id": "R1",
+		"member": {
+			"id": "0",
+			"name": "xxx",
+			"mobile": "xxxxx"
+		},
+		"note": "兔/天 數量"
+	},
+	{
+		"event_id": "0",
+		"event_group": "0",
+		"start_datetime": "yyyy/MM/dd hh:mm",
+		"end_datetime": "yyyy/MM/dd hh:mm",
+		"store_id": "BB",
+		"cage_id": "R1",
+		"member": {
+			"id": "0",
+			"name": "xxx",
+			"mobile": "xxxxx"
+		},
+		"note": "兔/天 數量"
+	},
+	{
+		"event_id": "0",
+		"event_group": "0",
+		"start_datetime": "yyyy/MM/dd hh:mm",
+		"end_datetime": "yyyy/MM/dd hh:mm",
+		"store_id": "BB",
+		"cage_id": "R1",
+		"member": {
+			"id": "0",
+			"name": "xxx",
+			"mobile": "xxxxx"
+		},
+		"note": "兔/天 數量"
+	},
+	{
+		"event_id": "0",
+		"event_group": "0",
+		"start_datetime": "yyyy/MM/dd hh:mm",
+		"end_datetime": "yyyy/MM/dd hh:mm",
+		"store_id": "BB",
+		"cage_id": "R1",
+		"member": {
+			"id": "0",
+			"name": "xxx",
+			"mobile": "xxxxx"
+		},
+		"note": "兔/天 數量"
+	}
+]

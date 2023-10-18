@@ -1,0 +1,62 @@
+[
+	{
+		"id": "R1",
+		"type": "rabbit",
+		"name": "兔1",
+		"store_id": "AA"
+	},
+	{
+		"id": "R2",
+		"type": "rabbit",
+		"name": "兔2",
+		"store_id": "AA"
+	},
+	{
+		"id": "R3",
+		"type": "rabbit",
+		"name": "兔3",
+		"store_id": "AA"
+	},
+	{
+		"id": "C1",
+		"type": "cunicpig",
+		"name": "天1",
+		"store_id": "AA"
+	},
+	{
+		"id": "C2",
+		"type": "cunicpig",
+		"name": "天2",
+		"store_id": "AA"
+	},
+	{
+		"id": "R1",
+		"type": "rabbit",
+		"name": "兔1",
+		"store_id": "BB"
+	},
+	{
+		"id": "R2",
+		"type": "rabbit",
+		"name": "兔2",
+		"store_id": "BB"
+	},
+	{
+		"id": "C1",
+		"type": "cunicpig",
+		"name": "天1",
+		"store_id": "BB"
+	},
+	{
+		"id": "C2",
+		"type": "cunicpig",
+		"name": "天2",
+		"store_id": "BB"
+	},
+	{
+		"id": "C3",
+		"type": "cunicpig",
+		"name": "天3",
+		"store_id": "BB"
+	}
+]
