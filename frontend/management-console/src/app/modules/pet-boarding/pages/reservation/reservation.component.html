@@ -1,0 +1,10 @@
+<div style="background-color: red;">
+	<button (click)="prevMonth()">
+		<< prev</button>
+			{{month.format('yyyy/MM')}}
+			<button (click)="nextMonth()">next >></button>
+</div>
+
+<div style="background-color: blue;">
+	<app-resource-scheduler [month]="month"></app-resource-scheduler>
+</div>
