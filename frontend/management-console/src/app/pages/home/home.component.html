@@ -1,0 +1,41 @@
+<mat-toolbar>
+	<button mat-icon-button (click)="drawer.toggle()">
+		<mat-icon>menu</mat-icon>
+	</button>
+	<span>牧草圓又圓</span>
+	<span style="flex: 1 1 auto;"></span>
+</mat-toolbar>
+
+<mat-drawer-container autosize style="display: flex; flex: 1;">
+	<mat-drawer #drawer mode="side" opened style="width: 200px;">
+		<mat-tree #tree [dataSource]="dataSource" [treeControl]="treeControl" class="tree">
+			<!-- This is the tree node template for leaf nodes -->
+			<!-- There is inline padding applied to this node using styles.
+			  This padding value depends on the mat-icon-button width. -->
+			<mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle>
+				<button mat-icon-button class="node-btn" [routerLink]="node.route" routerLinkActive="active">
+					<span>{{ node.name }}</span>
+				</button>
+			</mat-tree-node>
+			<!-- This is the tree node template for expandable nodes -->
+			<mat-nested-tree-node *matTreeNodeDef="let node; when: hasChild">
+				<div class="mat-tree-node">
+					<button mat-icon-button matTreeNodeToggle class="node-group-btn">
+						<mat-icon class="mat-icon-rtl-mirror">
+							{{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+						</mat-icon>
+						<span>{{ node.name }}</span>
+					</button>
+				</div>
+				<!-- There is inline padding applied to this div using styles.
+					This padding value depends on the mat-icon-button width.  -->
+				<div [class.tree-invisible]="!treeControl.isExpanded(node)" role="group">
+					<ng-container matTreeNodeOutlet></ng-container>
+				</div>
+			</mat-nested-tree-node>
+		</mat-tree>
+	</mat-drawer>
+	<mat-drawer-content style="padding: 10px; width: 100%;">
+		<router-outlet></router-outlet>
+	</mat-drawer-content>
+</mat-drawer-container>
