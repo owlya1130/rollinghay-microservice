@@ -33,6 +33,7 @@ import { ResourceSchedulerComponent } from './components/resource-scheduler/reso
     MatDatepickerModule,
     MatSelectModule,
     MatDialogModule,
-  ]
+  ],
+  exports: [CommonModule]
 })
 export class PetBoardingModule { }

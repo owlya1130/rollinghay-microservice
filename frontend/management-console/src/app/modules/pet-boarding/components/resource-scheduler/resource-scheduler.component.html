@@ -1,1 +1,17 @@
-<p>resource-scheduler works!</p>
+<div *ngFor="let week of calendar">
+	<div class="cell-week">
+		<div style="width: 100px;">
+
+		</div>
+		<div class="cell-day" *ngFor="let day of week">
+			{{day}}
+		</div>
+	</div>
+	<div class="cell-week" *ngFor="let resource of resources; let i = index;">
+		<div style="width: 100px;">
+			{{resource.name}}({{resource.id}})
+		</div>
+		<div class="cell-day" *ngFor="let day of week">
+		</div>
+	</div>
+</div>

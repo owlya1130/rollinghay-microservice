@@ -6,6 +6,8 @@ import { CageService } from 'src/app/shared/services/cage.service';
 import { Cage } from 'src/app/shared/models/cage';
 import { LocationService } from 'src/app/shared/services/location.service';
 import { Location } from 'src/app/shared/models/location';
+import { EventService } from 'src/app/shared/services/event.service';
+import { Event } from 'src/app/shared/models/event';
 import * as moment from 'moment';
 
 @Component({
@@ -20,12 +22,14 @@ export class ReservationComponent implements OnDestroy {
   storeID: string;
   stores: Location[] = [];
   cages: Cage[] = [];
+  events: Event[] = [];
   month: moment.Moment;
 
   constructor(
     private localStorageSvc: LocalStorageService,
     private locationSvc: LocationService,
-    private cageSvc: CageService
+    private cageSvc: CageService,
+    private eventSvc: EventService,
   ) {
     const currentStore = this.localStorageSvc.currentStore;
     this.storeID = currentStore.id;
@@ -35,7 +39,17 @@ export class ReservationComponent implements OnDestroy {
     this.locationSvc.getLocations("store")
       .pipe(takeUntil(this.destroy$))
       .subscribe(stores => this.stores = stores);
+    this.eventSvc.getEvents(this.storeID)
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(events => this.events = events);
     this.month = moment();
+
+    setTimeout(() => {
+      console.log("storeID", this.storeID);
+      console.log("stores", this.stores);
+      console.log("cages", this.cages);
+      console.log("events", this.events);
+    }, 1000);
   }
 
   ngOnDestroy(): void {
@@ -44,10 +58,10 @@ export class ReservationComponent implements OnDestroy {
   }
 
   nextMonth() {
-    this.month = this.month.add(1, 'months');
+    this.month = moment(this.month.add(1, 'month'));
   }
 
   prevMonth() {
-    this.month = this.month.subtract(1, 'months');
+    this.month = moment(this.month.subtract(1, 'month'));
   }
 }
