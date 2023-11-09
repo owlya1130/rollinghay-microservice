@@ -1,8 +1,18 @@
-.cell-week {
+.container {
 	display: flex;
-	flex-direction: row;
+	justify-content: space-between;
+}
 
-	.cell-day {
-		width: 100px;
-	}
+.item {
+	flex: 1;
+	/* 使每个项目平均占用剩余空间 */
+	text-align: center;
+	/* 可选，居中文本 */
+	border-bottom: 1px solid rgb(179, 178, 178);
+	/* 可选，添加边框以显示项目的边界 */
+}
+
+.resource {
+	border-right: 1px solid rgb(179, 178, 178);
+	flex: 1.5;
 }

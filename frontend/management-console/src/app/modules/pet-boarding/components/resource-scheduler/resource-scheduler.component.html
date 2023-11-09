@@ -1,17 +1,22 @@
-<div *ngFor="let week of calendar">
-	<div class="cell-week">
-		<div style="width: 100px;">
+<div *ngFor="let week of calendar; let i = index;"
+	[ngStyle]="{'border-top': i === 0 ? 'solid white' : 'none', 'border-bottom': 'solid white'}">
+	<div class="container">
+		<div class="resource item">
 
 		</div>
-		<div class="cell-day" *ngFor="let day of week">
-			{{day}}
+		<div *ngFor="let day of week" class="item">
+			<label>
+				{{(day.date == "01" ? day.month+"/" : "") + day.date+" ("+day.day+")"}}
+			</label>
 		</div>
 	</div>
-	<div class="cell-week" *ngFor="let resource of resources; let i = index;">
-		<div style="width: 100px;">
-			{{resource.name}}({{resource.id}})
+	<div *ngFor="let resource of resources;" class="container">
+		<div class="resource item">
+			<label>
+				{{resource.name}}({{resource.id}})
+			</label>
 		</div>
-		<div class="cell-day" *ngFor="let day of week">
+		<div *ngFor="let day of week" class="item">
 		</div>
 	</div>
 </div>
